@@ -1,0 +1,125 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars */
+}
+nav {
+    background-color: black;
+    opacity: 0.5; 
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%; 
+    z-index:3;
+}
+
+nav ul.left {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul.left li {
+    margin: 1px 0;
+    border: none;
+    padding: 10px 30px 10px 30px;
+}
+
+nav ul.left li a {
+    display: block;
+    line-height: 3em;
+    width: 100%;
+    text-decoration: none;
+    color: white; 
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: none;
+    transition: background-color 0.2s;
+    font-family:'Varela Round';
+}
+
+nav ul.left li a:hover {
+    background-color: rgba(255, 255, 255, 0.527); /* Change background color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+.plane {
+    width: 100%;
+    height: auto;
+    position: absolute; /* Position the GIF absolutely within the container */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the GIF behind the text */
+}
+div .text-overlay {
+    opacity: 0.5; 
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right:0;
+    width: 30%; 
+    z-index:4;
+}
+
+div .text-overlay ul.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div .text-overlay ul.list li {
+    margin: 1px 0;
+    border: none;
+    padding: 10px 30px 10px 30px;
+}
+
+div .text-overlay ul.list li a {
+    display: block;
+    line-height: 3em;
+    width: 100%;
+    text-decoration: none;
+    color:black; 
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.2s;
+    font-family:'Varela Round';
+}
+
+div .text-overlay ul.list li a:hover {
+    background-color: rgba(255, 255, 255, 0.527); /* Change background color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  .loading-overlay img 
+  {
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+  }
